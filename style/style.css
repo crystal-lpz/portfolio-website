@@ -31,7 +31,9 @@ h3 {
 }
 .btn-branding {
   color: white;
-  background-color: #6c63ff;
+  background-color: var(--branding-color);
+  font-size: 18px;
+  font-weight: 500;
   padding: 18px 30px;
   line-height: 27px;
 }
