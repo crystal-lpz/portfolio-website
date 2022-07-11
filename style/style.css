@@ -52,6 +52,19 @@ h3 {
 .project-description {
   padding: 120px 60px;
 }
+.about-section-content {
+  margin: 30px;
+}
+.about-section {
+  padding: 160px 20px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section p {
+  line-height: 30px;
+}
 
 @media (max-width: 900px) {
   h1 {
@@ -73,5 +86,9 @@ h3 {
   }
   .title-names {
     font-size: 44px;
+  }
+  .about-section {
+    text-align: center;
+    padding-top: 10px;
   }
 }
