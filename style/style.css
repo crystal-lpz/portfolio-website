@@ -24,6 +24,10 @@ h3 {
   line-height: 2;
   font-size: 24px;
 }
+h4 {
+  font-size: 48px;
+  font-family: var(--heading-font-family);
+}
 p {
   line-height: 30px;
 }
@@ -74,6 +78,7 @@ p {
   font-family: var(--heading-font-family);
   font-size: 20px;
 }
+
 nav {
   padding: 20px 0;
 }
@@ -99,6 +104,28 @@ img {
   background-color: var(--secondary-color);
 }
 
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 20px 50px 0;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
