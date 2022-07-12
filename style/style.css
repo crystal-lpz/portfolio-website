@@ -124,4 +124,8 @@ img {
     text-align: center;
     padding-top: 10px;
   }
+
+  nav li {
+    font-size: 12px;
+  }
 }
