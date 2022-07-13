@@ -37,7 +37,7 @@ p {
 }
 .hero {
   text-align: center;
-  padding: 160px 20px;
+  padding: 130px 20px;
   background-color: var(--secondary-color);
 }
 .btn-branding {
@@ -60,7 +60,7 @@ p {
   padding: 120px 60px;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content {
   margin: 30px;
@@ -74,9 +74,11 @@ p {
   font-weight: bold;
   margin: 20px 0 0;
 }
+.website {
+  background-color: var(--secondary-color);
+}
 .logo {
-  font-family: var(--heading-font-family);
-  font-size: 20px;
+  max-width: 80px;
 }
 
 nav {
@@ -99,9 +101,6 @@ nav a {
 nav li.active a,
 nav a:hover {
   color: var(--branding-color);
-}
-img {
-  background-color: var(--secondary-color);
 }
 
 footer .email-link {
