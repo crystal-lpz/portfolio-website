@@ -1,15 +1,16 @@
 :root {
-  --branding-color: #0442bf;
+  --branding-color: #79a2f2;
   --secondary-color: #bed5f3;
-  --accent-color: #79a2f2;
+  --accent-color: #f2e0bd;
   --font-color: #021b3d;
+  --box-shadow: 3px 3px 10px #79a2f2;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
-  background-color: #dde3ec4f;
+  background-color: #e1ebf89f;
   color: var(--font-color);
 }
 
@@ -51,6 +52,7 @@ p {
   font-weight: 500;
   padding: 18px 30px;
   line-height: 27px;
+  box-shadow: var(--box-shadow);
 }
 .btn-branding-outline {
   color: var(--branding-color);
@@ -59,6 +61,7 @@ p {
   font-weight: 500;
   padding: 18px 30px;
   line-height: 27px;
+  box-shadow: var(--box-shadow);
 }
 .btn-branding-outline-sm {
   color: var(--branding-color);
@@ -66,15 +69,10 @@ p {
   font-size: 12px;
   font-weight: 500;
   padding: 13px 26px;
-  display: block;
 }
-.btn-branding-outline-sm:hover {
-  color: var(--font-color);
-  border: 1px var(--font-color) solid;
-  background-color: #bed5f34d;
-}
+
 .project-description {
-  padding: 120px 60px;
+  padding: 9px 60px 222px 60px;
 }
 .content-container {
   padding: 60px 20px;
@@ -92,17 +90,26 @@ p {
   margin: 20px 0 0;
 }
 .website {
+  border: 10px solid var(--secondary-color);
   background-color: var(--secondary-color);
+}
+.website-photo {
+  background-color: var(--secondary-color);
+
+  box-shadow: 12px 12px 2px 1px var(--secondary-color);
 }
 .logo {
   max-width: 80px;
+}
+.logo:hover {
+  opacity: 0.7;
 }
 .contact {
   text-decoration: none;
   color: var(--branding-color);
 }
 .contact:hover {
-  color: var(--accent-color);
+  color: var(--font-color);
 }
 
 nav {
@@ -148,6 +155,19 @@ footer .contact-box {
   background-color: var(--secondary-color);
   padding: 30px 120px;
   border-radius: 10px;
+}
+footer h6 a{
+color: var(--branding-color);
+text-decoration: none;
+}
+.footer {
+  background-image: url(../photos/footer.png);
+  min-height: 460px;
+  min-width: 600px;
+  background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 }
 @media (max-width: 900px) {
   h1 {
