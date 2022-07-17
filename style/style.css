@@ -143,7 +143,10 @@ footer .email-link:hover {
   color: var(--branding-color);
 }
 footer .social-links a {
-  margin: 0 20px 50px 0;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
   color: var(--branding-color);
   background-color: var(--secondary-color);
   padding: 10px 14px;
@@ -156,19 +159,22 @@ footer .contact-box {
   padding: 30px 120px;
   border-radius: 10px;
 }
-footer h6 a{
-color: var(--branding-color);
-text-decoration: none;
+footer h6 a {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+footer .social-links a:hover {
+  color: var(--font-color);
 }
 .footer {
   background-image: url(../photos/footer.png);
   min-height: 460px;
-  min-width: 600px;
+
   background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
-}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
@@ -179,8 +185,32 @@ text-decoration: none;
   h3 {
     font-size: 12px;
   }
+  h6 {
+    font-size: 12px;
+  }
+  .icon {
+    margin-top: -66px;
+    max-width: 330px;
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .btn-branding {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+  }
+  .btn-branding-outline {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+  }
   .hero {
-    padding: 100px 20px;
+    padding: 90px 20px;
   }
 
   .project-description {
@@ -194,7 +224,12 @@ text-decoration: none;
     text-align: center;
     padding-top: 10px;
   }
-
+  .footer {
+    min-height: 100px;
+  }
+  .logo {
+    max-width: 60px;
+  }
   nav li {
     font-size: 12px;
   }
