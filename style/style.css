@@ -3,7 +3,7 @@
   --secondary-color: #bed5f3;
   --accent-color: #f2e0bd;
   --font-color: #021b3d;
-  --box-shadow: 3px 3px 10px #79a2f2;
+  --box-shadow: 3px 3px 10px #797c8375;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -18,6 +18,15 @@ h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-size: 96px;
+}
+.line {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 91px;
+  display: flex;
+  justify-self: baseline;
+  justify-content: center;
+  align-items: center;
 }
 h2 {
   font-weight: bold;
@@ -72,7 +81,7 @@ p {
 }
 
 .project-description {
-  padding: 9px 60px 222px 60px;
+  padding: 100px 60px 100px 60px;
 }
 .content-container {
   padding: 60px 20px;
@@ -89,14 +98,29 @@ p {
   font-weight: bold;
   margin: 20px 0 0;
 }
+.icons-programs {
+  max-width: 50px;
+  filter: sepia(50%) hue-rotate(162deg);
+}
+.icons-programs-react {
+  max-width: 50px;
+}
+
+.icons-programs-container ul {
+  padding: 0;
+}
+.icons-programs-container li {
+  list-style: none;
+  display: inline-flex;
+  justify-self: left;
+}
 .website {
   border: 10px solid var(--secondary-color);
   background-color: var(--secondary-color);
 }
 .website-photo {
   background-color: var(--secondary-color);
-
-  box-shadow: 12px 12px 2px 1px var(--secondary-color);
+  box-shadow: var(--box-shadow);
 }
 .logo {
   max-width: 80px;
@@ -170,7 +194,7 @@ footer .social-links a:hover {
   background-image: url(../photos/footer.png);
   min-height: 460px;
 
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -188,6 +212,9 @@ footer .social-links a:hover {
   }
   h6 {
     font-size: 12px;
+  }
+  .line {
+    font-size: 47px;
   }
   .icon {
     margin-top: -66px;
@@ -217,6 +244,10 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  .icons-programs,
+  .icons-programs-react {
+    display: none;
   }
   .title-names {
     font-size: 44px;
