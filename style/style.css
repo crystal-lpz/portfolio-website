@@ -258,9 +258,11 @@ footer .social-links a:hover {
     padding: 5px 10px;
   }
   .hero {
+    padding: 10px 20px;
+  }
+  .hero-content {
     padding: 90px 20px;
   }
-
   .project-description {
     padding: 0;
     text-align: center;
