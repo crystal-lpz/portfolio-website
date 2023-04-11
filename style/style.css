@@ -50,6 +50,16 @@ h4 {
 p {
   line-height: 30px;
 }
+p a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
+}
+/*  */
+img.projectOne {
+  background-image: url("/photos/artbystarchild.mp4");
+  background-size: cover;
+}
 .title-names {
   font-family: var(--heading-font-family);
   font-size: 64px;
@@ -178,6 +188,7 @@ nav li.active a,
 nav a:hover {
   color: var(--branding-color);
 }
+
 /* Java */
 .fade-in {
   opacity: 0;
