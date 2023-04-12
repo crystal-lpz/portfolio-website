@@ -16,6 +16,7 @@ body {
   font-family: var(--default-font-family);
   background-color: var(--body-color);
   color: var(--font-color);
+  box-sizing: none;
   overflow-x: hidden;
 }
 
@@ -146,6 +147,7 @@ img.projectOne {
 }
 .website {
   border: 10px solid var(--secondary-color);
+  border-radius: 20px 20px;
   background-color: var(--secondary-color);
 }
 .website-photo {
@@ -228,7 +230,14 @@ nav a:hover {
 }
 
 /*  */
-
+footer {
+  background-image: url(../photos/footerwave.png);
+  min-height: 460px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 50px 0;
+}
 footer .email-link {
   text-decoration: none;
   color: black;
@@ -254,6 +263,7 @@ footer .contact-box {
   padding: 30px 120px;
   border-radius: 10px;
 }
+
 footer h6 a {
   color: var(--branding-color);
   text-decoration: none;
@@ -261,30 +271,10 @@ footer h6 a {
 footer .social-links a:hover {
   color: var(--font-color);
 }
-.footer {
-  background-image: url(../photos/footer.png);
-  min-height: 460px;
+/* footer .footer {
+  display: flex;
+} */
 
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-/*  */
-::-webkit-scrollbar {
-  width: 1.2rem;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--secondary-color);
-  border-radius: 100vw;
-  margin-block: 0.8em;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--font-color);
-  border-radius: 100vw;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #31221d;
-}
 @media (max-width: 900px) {
   h1 {
     font-size: 43px;
@@ -343,6 +333,11 @@ footer .social-links a:hover {
   .content {
     text-align: center;
     padding-top: 10px;
+  }
+  footer {
+    min-height: 180px;
+
+    padding: 10px 0;
   }
   .footer {
     min-height: 100px;
