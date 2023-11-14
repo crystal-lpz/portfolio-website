@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById("text");
-const phrases = ["Crystal Lopez"];
+const phrases = ["Frontend Developer", "Web Designer", "Artist "];
 let i = 0;
 let j = 0;
 let currentPhrase = [""];
