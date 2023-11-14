@@ -14,11 +14,17 @@
   --default-font-family: "Onest", sans-serif;
 }
 
+html {
+  margin: 0;
+}
 body {
   font-family: var(--default-font-family);
   background-color: var(--body-color);
   color: var(--font-color);
   box-sizing: none;
+}
+section {
+  margin: 150px 150px 30px 150px;
 }
 
 h1 {
@@ -88,6 +94,7 @@ h3 {
   color: #272142;
   line-height: 2;
   font-size: 24px;
+  margin: 0;
 }
 h4 {
   font-size: 48px;
@@ -349,13 +356,17 @@ footer .social-links a {
     text-align: center;
   }
   h3 {
-    font-size: 12px;
+    font-size: 10px;
   }
   h6 {
     font-size: 12px;
   }
+  section {
+    margin: 100px 20px 30px 20px;
+  }
   .line {
-    font-size: 20px;
+    font-size: 10px;
+    padding: 5px 10px;
   }
   .icon {
     margin-top: -66px;
@@ -366,8 +377,8 @@ footer .social-links a {
   }
 
   .content h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 37px;
   }
   .btn-branding {
     font-size: 12px;
@@ -396,6 +407,7 @@ footer .social-links a {
   .content {
     text-align: center;
     padding-top: 4px;
+    margin: 2px;
   }
   .grid-overlap {
     display: block;
