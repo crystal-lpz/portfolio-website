@@ -3,8 +3,8 @@
 :root {
   --font-color: #171717;
   --body-color: #f7f6f2;
-  --primary-color: #bc8ffe;
-  --primary-color-2: #d6beff;
+  --primary-color: #9ad2ff;
+  --primary-color-2: #b6d7f3;
 
   --box-shadow: 12px 12px 2px 1px rgb(107, 50, 108, 0.281);
   --box-shadow-main: 7px 7px 0px 0px rgb(88, 38, 90, 0.281);
@@ -75,10 +75,11 @@ h1 {
 }
 /*  */
 .border {
-  height: 3px;
+  height: 5px;
   width: 200px;
   margin: 17px 50px 0 50px;
   padding: 0 20px;
+  border-radius: 20px 20px;
   background-color: var(--primary-color);
 }
 
