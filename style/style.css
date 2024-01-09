@@ -9,10 +9,9 @@
   --header-color: #038877;
   --primary-color: #0da08e;
   --secondary-color: #48d1c1;
-  --third-color: #d8dbc3;
+  --accent-color: #ffe585;
 
   --box-shadow: 12px 12px 2px 1px #d8dbc3;
-  --box-shadow-main: 7px 7px 0px 0px rgb(88, 38, 90, 0.281);
 
   --transition: all 0.4s ease-in-out;
   --heading-font-family: BN;
@@ -29,9 +28,17 @@ body {
   box-sizing: none;
 }
 section {
-  margin: 150px 150px 30px 150px;
+  margin: 80px 0 114px 0;
+  text-align: center;
 }
-
+section h2 {
+  font-family: var(--heading-font-family);
+  font-size: 68px;
+}
+section.certificates {
+  margin: 150px 150px 30px 150px;
+  text-align: left;
+}
 h1 {
   color: var(--header-color);
   font-family: var(--heading-font-family);
@@ -47,8 +54,7 @@ h1 {
   transition: var(--transition);
 }
 .underline {
-  border-color: #bc8ffe;
-  border-bottom: 0.3rem solid var(--primary-color);
+  border-bottom: 0.5rem solid var(--accent-color);
   border-radius: 3px 3px;
 }
 
@@ -58,22 +64,6 @@ h1 {
 
 /* hero */
 
-.description {
-  display: flex;
-  justify-content: left;
-  padding-top: 0.9rem;
-  padding-bottom: 3rem;
-  align-items: center;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  position: relative;
-}
-/*  */
 .border {
   height: 5px;
   width: 200px;
@@ -83,9 +73,6 @@ h1 {
   background-color: var(--primary-color);
 }
 
-.contact {
-  margin: 205px 0;
-}
 h1 a {
   transition: var(--transition);
 }
@@ -94,7 +81,6 @@ h2 {
   font-size: 36px;
 }
 h3 {
-  color: var(--primary-color-2);
   font-weight: normal;
   font-size: 24px;
   line-height: 2.5rem;
@@ -117,21 +103,6 @@ p a {
   transition: var(--transition);
 }
 
-.projects-navbar h4 {
-  margin-bottom: 0.8rem;
-}
-.projects-navbar ul {
-  display: inline-flex;
-  gap: 1rem;
-  padding: 0;
-}
-.projects-navbar li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: var(--accent-color);
-}
-
 a.active {
   color: var(--branding-color);
   font-weight: 700;
@@ -152,7 +123,6 @@ h1 a:hover {
   display: grid;
   grid-column-gap: 1vw;
   grid-row-gap: 1vw;
-  width: auto;
 }
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -164,9 +134,6 @@ h1 a:hover {
 .grid-list {
   grid-template-columns: 1fr 0.5fr 2fr;
 }
-footer .grid-3 {
-  grid-template-columns: 2fr 1fr 1fr;
-}
 
 .gallery {
   max-width: 1800px;
@@ -174,58 +141,37 @@ footer .grid-3 {
   margin-left: auto;
   margin-right: auto;
 }
-
-.grid-img {
-  max-width: 100%;
-  display: block;
+a {
+  text-decoration: none;
 }
-.grid-img img:hover {
-  filter: opacity(0.6);
+
+.img-link {
+  transition: var(--transition);
+}
+.img-link:hover {
+  filter: brightness(80%);
   transition: var(--transition);
 }
 /*  */
-.responsive-img {
-  width: 100%;
-}
-.mt-5 {
-  margin-top: 8rem;
-}
-.mb-3 {
-  margin-bottom: 3rem;
-}
-.mb-6 {
-  margin-bottom: 6rem;
-}
-.mb-7 {
-  margin-bottom: 8rem;
-}
-.text-center {
-  text-align: center;
-}
-.title-names {
-  font-family: var(--heading-font-family);
-  font-size: 64px;
-}
+/* Hero content */
 .hero {
   text-align: center;
-  background-color: transparent;
 }
 .hero-content {
   padding: 100px 30px;
   margin: 0 30px;
 }
 .hero-content h1 {
+  color: var(--header-color);
   font-family: var(--heading-font-family);
-  font-size: 14rem;
+  font-size: 12rem;
 }
-
 .hero-content h3 {
   font-size: 1.3rem;
   margin-bottom: 3rem;
   padding: 0 76.8px;
   font-weight: 500;
 }
-
 /* Buttons */
 .btn-grid {
   display: inline-flex;
@@ -234,15 +180,15 @@ footer .grid-3 {
 
 a.btn {
   font-size: 18px;
-  padding: 18px 30px;
+  font-weight: 600;
   line-height: 27px;
+  padding: 18px 30px;
   border-radius: 2px 2px;
+  transition: var(--transition);
 }
 .btn-branding {
   color: var(--body-color);
   background-color: var(--font-color);
-  font-weight: 600;
-  transition: var(--transition);
 }
 
 .btn-branding:hover {
@@ -255,10 +201,6 @@ a.btn {
 .btn-branding-outline {
   color: var(--font-color);
   border: 2.5px solid var(--font-color);
-  border-radius: 2px 2px;
-  font-size: 18px;
-  font-weight: 600;
-  transition: var(--transition);
 }
 .btn-branding-outline:hover {
   box-shadow: var(--box-shadow);
@@ -266,21 +208,6 @@ a.btn {
 }
 
 /*  */
-.project-description {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-right: 300px;
-}
-
-.project-description-2 {
-  padding-left: 250px;
-}
-.content-container article {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  padding: 60px 50px;
-}
 .content {
   margin: 30px;
 }
@@ -294,25 +221,18 @@ a.btn {
   font-weight: bold;
   margin: 20px 0 0;
 }
-
-.website {
-  border: 10px solid var(--secondary-color);
-  border-radius: 20px 20px;
-  background-color: var(--secondary-color);
-}
-.website-photo {
-  background-color: var(--secondary-color);
-}
+/* contact link */
 
 .contact {
+  margin: 205px 0;
+  text-align: center;
+}
+h1.contact a {
+  color: var(--font-color);
   text-decoration: none;
-  color: var(--branding-color);
 }
 
-.row {
-  align-items: center;
-}
-
+/* Navbar */
 nav {
   padding: 20px 0 30px 0;
 }
@@ -339,29 +259,12 @@ nav h5 {
   font-weight: bold;
   font-size: 27px;
 }
-
-/*  */
+/* Footer */
 footer {
   background-color: var(--font-color);
   padding: 70px 90px;
-  color: var(--third-color);
+  color: var(--accent-color);
 }
-footer article {
-  margin: 100px 0 150px 0;
-  transition: var(--transition);
-}
-footer article a img:hover {
-  transition: var(--transition);
-  filter: brightness(0.8);
-}
-footer article h3 {
-  text-align: center;
-  color: var(--third-color);
-  font-family: var(--default-font-family);
-  font-size: 20px;
-  margin-top: 20px;
-}
-
 footer ul,
 li {
   list-style: none;
@@ -369,7 +272,6 @@ li {
 footer h2 {
   font-family: var(--heading-font-family);
   color: var(--body-color);
-  font-weight: 300;
 }
 footer h3 {
   font-family: var(--heading-font-family);
@@ -378,7 +280,7 @@ footer h3 {
 }
 
 footer p {
-  color: var(--third-color);
+  color: var(--accent-color);
   font-weight: 600;
   margin: 0;
 }
@@ -387,7 +289,28 @@ footer .social-links a {
   font-size: 18px;
   transition: all 100ms ease-in-out;
   list-style: none;
+  color: var(--third-color);
 }
+footer a {
+  color: var(--accent-color);
+}
+
+/* /* footer Projects  */
+footer article {
+  margin: 100px 0 150px 0;
+  transition: var(--transition);
+}
+footer article h3 {
+  text-align: center;
+  color: var(--third-color);
+  font-family: var(--default-font-family);
+  font-size: 20px;
+  margin-top: 20px;
+}
+footer article h3 {
+  color: var(--body-color);
+}
+/*  */
 
 @media (max-width: 900px) {
   nav h5 {
@@ -402,46 +325,37 @@ footer .social-links a {
     text-align: center;
   }
   h3 {
-    font-size: 10px;
+    font-size: 15px;
+    margin-bottom: 0;
   }
   h6 {
     font-size: 12px;
   }
   section {
-    margin: 100px 20px 30px 20px;
+    margin: 80px 0 114px 0;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 39px;
+  }
+  section.certificates {
+    margin: 150px 50px 30px 50px;
+    text-align: left;
   }
   .line {
     font-size: 10px;
     padding: 5px 10px;
   }
-  .icon {
-    margin-top: -66px;
-    max-width: 330px;
-  }
   .contact {
     margin: 20px 0 117px 0;
   }
 
-  .content h1 {
-    font-size: 34px;
-    line-height: 37px;
-  }
   a.btn {
     font-size: 15px;
     padding: 10px 21px;
     line-height: 27px;
     border-radius: 2px 2px;
   }
-  /* .btn-branding {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 5px 10px;
-  }
-  .btn-branding-outline {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 5px 10px;
-  } */
   .hero {
     padding: 10px 20px;
   }
@@ -454,16 +368,15 @@ footer .social-links a {
     font-size: 3rem;
   }
   .hero-content h3 {
-    font-size: 0.7rem;
+    font-size: 14.8px;
     line-height: normal;
     padding: 0 10.8px;
   }
-  .icons-programs,
-  .icons-programs-react {
-    display: none;
-  }
-  .title-names {
-    font-size: 44px;
+  h1.contact {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 34px;
+    line-height: 37px;
   }
   .content {
     text-align: center;
@@ -489,15 +402,13 @@ footer .social-links a {
     gap: 20px;
   }
   footer {
-    min-height: 180px;
-    padding: 60px 30px;
+    padding: 80px 30px;
   }
   footer h3 {
     font-size: 20px;
   }
-  footer .grid-3 {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  footer article {
+    margin: 50px 0 150px 0;
   }
   footer ul {
     padding: 0;
