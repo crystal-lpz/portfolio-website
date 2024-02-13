@@ -313,17 +313,15 @@ footer article h3 {
 /*  */
 
 @media (max-width: 900px) {
+  .content h1 {
+    font-size: 36px;
+    line-height: normal;
+  }
   nav h5 {
     font-size: 23px;
     margin: 0;
   }
-  h1 {
-    font-size: 43px;
-  }
-  h1.sub {
-    font-size: 25px;
-    line-height: normal;
-  }
+
   h2 {
     font-size: 20px;
     text-align: center;
