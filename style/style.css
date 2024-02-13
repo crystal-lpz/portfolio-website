@@ -322,6 +322,7 @@ footer article h3 {
   }
   h1.sub {
     font-size: 25px;
+    line-height: normal;
   }
   h2 {
     font-size: 20px;
